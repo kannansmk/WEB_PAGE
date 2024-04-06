@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+</head>
+
+<body>
+  <style>
+    #home {
+      height: 100vh;
+      background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSsB8iRPAHNNnZeLV-8K7a-o_jgLSfy7R4s5tRvudaVsHbyFfBzSTAHbfk2&s=10");
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    @keyframes textBackground {
+      0% {
+        color: #ff6347;
+      }
+
+      50% {
+        color: #ffa500;
+      }
+
+      100% {
+        color: #ff6347;
+      }
+    }
+
+    .animated-text {
+      animation: textBackground 5s infinite;
+      display: inline-block;
+      padding: 5px 10px;
+    }
+
+    @keyframes shake {
+      0% {
+        transform: translateX(0);
+      }
+
+      25% {
+        transform: translateX(-2px) rotate(-2deg);
+      }
+
+      50% {
+        transform: translateX(2px) rotate(2deg);
+      }
+
+      75% {
+        transform: translateX(-2px) rotate(-2deg);
+      }
+
+      100% {
+        transform: translateX(0);
+      }
+    }
+
+    .animated-emoji {
+      display: inline-block;
+      animation: shake 0.5s infinite;
+    }
+  </style>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><img src="https://github.com/kannansmk/IMAGES/blob/main/smk-logo.png?raw=true"
+          alt="" width="35" height="35" style="border-radius: 20px;">&nbsp;Kannan</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#projects">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skills">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="home" class="bg-primary text-white py-5">
+    <div class="container text-center">
+      <h1>
+        Hi,<span class="animated-emoji">👋</span><br />
+        I'm Kannan,
+      </h1>
+      <h5 class="animated-text">
+        I am a web developer passionate about <br />creating beautiful and
+        functional websites.
+      </h5>
+      <br />
+      <a href="#about" class="btn btn-success btn-lg">About Me</a>
+    </div>
+  </header>
+
+  <section id="about" class="py-5">
+    <div class="container">
+      <h2 class="text-center mt-3 mb-2"><u>About Me</u></h2>
+      <div class="row">
+        <div class="col-md-6">
+          <center>
+            <img
+              src="https://raw.githubusercontent.com/kannansmk/IMAGES/main/dp.jpg?token=GHSAT0AAAAAACPRS7XNQBWR2YIEMYHTBJIIZPUL6YQ"
+              alt="Profile Picture" class="img-fluid rounded-circle mb-3 mt-2" width="200" height="200" />
+          </center>
+        </div>
+        <div class="col-md-6">
+          <div class="container">
+            <center>
+              <h4>a skilled</h4>
+              <h3>Full Stack Developer</h3>
+              <p>
+                I specialize in creating dynamic, user-friendly web
+                applications by seamlessly integrating frontend and backend
+                technologies. Let's work together to bring your ideas to life!
+              </p>
+              <a href="#projects" class="btn btn-secondary btn-sm">View Project</a>
+            </center>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="text-center mt-3 mb-2"><u>Projects</u></h2>
+      <div class="row">
+        <div class="card m-3 col-md-3">
+          <!-- <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcROfzoPNUx7UPFpwKkzTmDCom9bErAzV-hxK6AxFncUiXBdqmOMobiYvjrR&s=10"
+            class="card-img-top" alt="Project 1" /> -->
+            <img
+            src="https://2.bp.blogspot.com/-cu41x8gZ3bE/WPqzsKlh4QI/AAAAAAAAASQ/G9j_cuCPc70NbMtxR_2tlBmapEOI696nwCLcB/s1600/maintenance.png"
+            class="card-img-top" alt="Project 1" />
+          <!-- <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Description of Project 1 goes here.</p>
+            <center>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </center>
+          </div> -->
+        </div>
+        <!-- <div class="mb-4 col-md-2"></div> -->
+        <div class="card m-3 col-md-3">
+          <!-- <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREi5m9NPaqAB067W3_W2IlIejhCsbPhEn9UBi_uQAlTd7DPqYCtDCnV98&s=10"
+            class="card-img-top" alt="Project 1" /> -->
+            <img
+            src="https://2.bp.blogspot.com/-cu41x8gZ3bE/WPqzsKlh4QI/AAAAAAAAASQ/G9j_cuCPc70NbMtxR_2tlBmapEOI696nwCLcB/s1600/maintenance.png"
+            class="card-img-top" alt="Project 1" />
+          <!-- <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Description of Project 1 goes here.</p>
+            <center>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </center>
+          </div> -->
+        </div>
+        <div class="card m-3 col-md-3">
+          <!-- <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcREi5m9NPaqAB067W3_W2IlIejhCsbPhEn9UBi_uQAlTd7DPqYCtDCnV98&s=10"
+            class="card-img-top" alt="Project 1" /> -->
+            <img
+            src="https://2.bp.blogspot.com/-cu41x8gZ3bE/WPqzsKlh4QI/AAAAAAAAASQ/G9j_cuCPc70NbMtxR_2tlBmapEOI696nwCLcB/s1600/maintenance.png"
+            class="card-img-top" alt="Project 1" />
+          <!-- <div class="card-body">
+            <h5 class="card-title">Project 1</h5>
+            <p class="card-text">Description of Project 1 goes here.</p>
+            <center>
+              <a href="#" class="btn btn-primary">View Details</a>
+            </center>
+          </div> -->
+        </div>
+      </div>
+      <center>
+        <a href="#skills" class="btn btn-secondary btn-sm">View Skills</a>
+      </center>
+    </div>
+  </section>
+
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="text-center mt-3 mb-4"><u>Skills</u></h2>
+      <div class="row">
+        <div class="col-md-4">
+          <center><label><i class="fas fa-file-code" style="color: #007bff;"></i>&emsp;HTML5 & CSS3</label></center>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #007bff;"
+              aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="progress-value">90%</span>
+            </div>
+          </div>
+          <center><label><i class="fab fa-bootstrap" style="color: #7952b3;"></i>&emsp;Bootstrap</label></center>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #7952b3;"
+              aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="progress-value">90%</span>
+            </div>
+          </div>
+          <center><label><i class="fab fa-js" style="color: #f0db4f;"></i>&emsp;JavaScript & jQuery</label></center>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #f0db4f;"
+              aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="progress-value">90%</span>
+            </div>
+          </div>
+        </div>
+        <br />
+        <div class="col-md-4">
+          <center><label><i class="fab fa-react" style="color: #61dafb;"></i>&emsp;React js</label></center>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 75%; background-color: #61dafb;"
+              aria-valuenow="75" aria-valuemin="0" aria-valuemax="100">
+              <span class="progress-value">75%</span>
+            </div>
+          </div>
+          <center><label><i class="fab fa-php" style="color: #8892bf;"></i>&emsp;PHP</label></center>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 90%; background-color: #8892bf;"
+              aria-valuenow="90" aria-valuemin="0" aria-valuemax="100">
+              <span class="progress-value">90%</span>
+            </div>
+          </div>
+          <center><label><i class="fab fa-laravel" style="color: #f05340;"></i>&emsp;Laravel</label></center>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #f05340;"
+              aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <span class="progress-value">80%</span>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <center><label><i class="fas fa-database" style="color: #007bff;"></i>&emsp;MySQL</label></center>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #007bff;"
+              aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <span class="progress-value">80%</span>
+            </div>
+          </div>
+          <center><label><i class="fas fa-server" style="color: #e9322d;"></i>&emsp;SQL Server</label></center>
+          <div class="progress mb-3">
+            <div class="progress-bar" role="progressbar" style="width: 80%; background-color: #e9322d;"
+              aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+              <span class="progress-value">80%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-5 bg-dark text-white">
+    <div class="container">
+      <h2 class="text-center mb-4"><u>Contact</u></h2>
+      <div class="row">
+        <div class="col-md-6 mx-auto">
+          <ul class="social-icons mt-4 text-center list-unstyled">
+            <li class="mb-3">
+              <a href="https://www.facebook.com/profile.php?id=100004114545806&mibextid=ZbWKwL"
+                style="color: #3b5998"><i class="fab fa-facebook fa-2x"></i> Kannan Kannan</a>
+            </li>
+            <li class="mb-3">
+              <a href="https://instagram.com/kannan_s.mk?igshid=YmMyMTA2M2Y=" style="color: #c13584"><i
+                  class="fab fa-instagram fa-2x"></i> Kannan_s.mk</a>
+            </li>
+            <li class="mb-3">
+              <a href="https://github.com/kannansmk" style="color: #8d8b8b"><i class="fab fa-github fa-2x"></i>
+                Kannansmk</a>
+            </li>
+            <li class="mb-3">
+              <a href="https://t.me/kannan_smk" style="color: #0088cc"><i class="fab fa-telegram fa-2x"></i>
+                Telegram</a>
+            </li>
+            <!-- <li class="mb-3">
+              <a href="https://wa.me/qr/5CIZSBVH22LEK1" style="color: #25d366"><i class="fab fa-whatsapp fa-2x"></i> +91
+                9080411861</a>
+            </li> -->
+            <li class="mb-3">
+              <a href="mailto:kannan12141@gmail.com"><i class="far fa-envelope fa-2x"></i> Kannan12141@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="bg-primary text-white text-center py-3">
+    <div class="container">
+      <p>&copy; 2024 Kannan. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
